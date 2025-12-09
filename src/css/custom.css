@@ -1,0 +1,200 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* ARGUS Foundation - Dark, Minimal Aesthetic matching argus.foundation */
+:root {
+  /* Primary colors - White/Gray instead of green */
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #e5e5e5;
+  --ifm-color-primary-darker: #d4d4d4;
+  --ifm-color-primary-darkest: #a3a3a3;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+  
+  /* ARGUS Color Palette - matching website */
+  --argus-dark-bg: #0a0a0a;
+  --argus-dark-surface: #1a1a1a;
+  --argus-dark-border: #2a2a2a;
+  --argus-white: #ffffff;
+  --argus-gray: #a0a0a0;
+  --argus-gray-dark: #6b7280;
+}
+
+/* Dark mode theme - ARGUS website aesthetic */
+[data-theme='dark'] {
+  /* White as primary color for dark theme */
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #e5e5e5;
+  --ifm-color-primary-darker: #d4d4d4;
+  --ifm-color-primary-darkest: #a3a3a3;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Dark backgrounds matching argus.foundation */
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-navbar-background-color: #0a0a0a;
+  --ifm-footer-background-color: #0a0a0a;
+  
+  /* Text colors */
+  --ifm-font-color-base: #ffffff;
+  --ifm-heading-color: #ffffff;
+  
+  /* Links */
+  --ifm-link-color: #ffffff;
+  --ifm-link-hover-color: #e5e5e5;
+  
+  /* Borders */
+  --ifm-color-emphasis-300: #2a2a2a;
+  --ifm-hr-background-color: #2a2a2a;
+}
+
+/* Light mode adjustments */
+[data-theme='light'] {
+  --ifm-color-primary: #0a0a0a;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #1a1a1a;
+  --ifm-color-primary-lighter: #2a2a2a;
+  --ifm-color-primary-lightest: #3a3a3a;
+}
+
+/* Custom ARGUS styling matching website */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+}
+
+/* Code blocks with subtle borders */
+.prism-code {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1a1a1a !important;
+}
+
+/* Sidebar - minimal accent */
+.menu__link--active {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 2px solid #ffffff;
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Cards and containers - subtle borders */
+.card {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Buttons - matching ARGUS style */
+.button--primary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border-color: #ffffff;
+}
+
+.button--secondary {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: 1px solid #ffffff;
+}
+
+.button--secondary:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Tables */
+table {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table thead {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Admonitions/Callouts */
+.admonition {
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hero section on homepage */
+.hero--primary {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: #a0a0a0;
+}
+
+/* Clean, minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}

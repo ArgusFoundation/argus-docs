@@ -1,0 +1,9 @@
+{
+  "label": "Argus Vault",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Deep dive into Argus Vault security: how it works, architecture, multisig enforcement, and all security layers."
+  }
+}
+
